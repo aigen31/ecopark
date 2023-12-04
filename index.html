@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Экопарк</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/css-hamburgers/dist/hamburgers.min.css">
+	<link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
+	<!-- <link rel="stylesheet" href="libs/animate/animate.css"> -->
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/jquery/jquery-1.11.2.min.js" defer></script>
+
+	<script src="libs/slick-1.8.1/slick/slick.min.js" defer></script>
+
+	<script src="libs/inputmask/dist/jquery.inputmask.min.js" defer></script>
+
+	<script src="libs/modernizr/modernizr.js" defer></script>
+
+	<script src="js/common.js" defer></script>
+
+</head>
+
+<body>
+
+	<!-- Здесь пишем код -->
+
+	<!-- <div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div> -->
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<section class="s s-main" style="background-image: url(img/background.jpg);">
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header__flex">
+							<a href="#" class="header__logo-link">
+								<img src="img/logo.svg" alt="" class="header__logo">
+							</a>
+
+							<div class="header__menu">
+								<ul class="header__menu-list">
+									<li class="header__menu-item">
+										<a href="#">Концепция</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#">Планировки и цены</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#">Местоположение</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#">Фотогалерея</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#">FAQ</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#">Контакты</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="header__hamburger" id="header__hamburger">
+								<button title="menu" class="hamburger hamburger--collapse" id="hamburger" type="button">
+									<span class="hamburger-box">
+										<span class="hamburger-inner"></span>
+									</span>
+								</button>
+
+								<p class="header__hamburger-text">
+									Меню
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="h1 s-main__h1">
+						Коттеджный<br>
+						поселок<br>
+						<span>Экопарк</span>
+					</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-12 col-6 offset-sm-0 offset-6">
+					<div class="buttons s-main__buttons">
+						<a href="#" class="btn s-main__btn btn--callback">Связаться</a>
+						<a href="#" class="btn s-main__btn btn--inline">планировки</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="s-main__vector --absolute-right --absolute-sm-left">
+			<p class="s-main__vector-text">
+				Cчастье<br>
+				живет<br>
+				здесь
+			</p>
+		</div>
+
+		<button type="button" title="Scroll Down" class="scroll-down">
+			<img src="img/arrow-down.svg" alt="">
+		</button>
+	</section>
+
+
+	<section class="s s-concept">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="h2 s-concept__h2">
+						Концепция
+					</h2>
+
+					<div class="s-concept__border-radius">
+						<div class="s-concept__message">
+							<p>
+								Закрытый коттеджный поселок ЭкоПарк в селе Мицулевка. Здесь все сделано для безопасного и комфортного
+								проживания. На 1,7 гектарах расположено 23 индивидуальных жилых дома и вся необходимая инфрастуктура. С
+								территории поселка открывается прекрасный вид на горные вершины и СТК Горный Воздух.
+							</p>
+						</div>
+
+						<svg class="flt_svg" xmlns="http://www.w3.org/2000/svg">
+							<defs>
+								<filter id="flt_tag">
+									<feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+									<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+										result="flt_tag" />
+									<feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
+								</filter>
+							</defs>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<img src="img/ellipse.png" alt="" class="s-concept__composition --absolute-left">
+	</section>
+
+
+	<section class="s s-about">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="h2 s-about__h2">
+						Наш поселок это
+					</h2>
+				</div>
+			</div>
+
+			<div class="row justify-content-xl-between">
+				<div class="col-xl-auto">
+					<div class="s-about__card">
+						<div class="s-about__card-image">
+							<div class="s-about__card-circle">
+								<img src="img/heart.svg" alt="">
+							</div>
+
+							<div class="s-about__card-counter">
+								01
+							</div>
+						</div>
+
+						<h3 class="h3 s-about__card-title">
+							Комфорт
+						</h3>
+
+						<p class="s-about__card-text">
+							Все преимущества городской квартиры и частного дома. Расчисткой и обслуживанием проездных путей, а также
+							обслуживанием инженерной инфрастуктуры занимается Управляющая Компания поселка. В то же время, у каждого
+							дома есть своя парковка и придомовая территория, где вы можете проводить время на свежем воздухе со своей
+							семьей.
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-auto">
+					<div class="s-about__card">
+						<div class="s-about__card-image">
+							<div class="s-about__card-circle">
+								<img src="img/home.svg" alt="">
+							</div>
+
+							<div class="s-about__card-counter">
+								02
+							</div>
+						</div>
+
+						<h3 class="h3 s-about__card-title">
+							Архитектура
+						</h3>
+
+						<p class="s-about__card-text">
+							Все домовладения в поселке построены в одном архитектурном стиле, а Вы можете выбрать одну из 5 возможных
+							планировок. Все дома строятся из автоклавных газобетонных блоков, монолитным железобетонным каркасом и
+							внешним утеплением.
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-auto">
+					<div class="s-about__card">
+						<div class="s-about__card-image">
+							<div class="s-about__card-circle">
+								<img src="img/trees.svg" alt="">
+							</div>
+
+							<div class="s-about__card-counter">
+								03
+							</div>
+						</div>
+
+						<h3 class="h3 s-about__card-title">
+							Экология
+						</h3>
+
+						<p class="s-about__card-text">
+							Поселок расположен в экологически чистом месте, в 10 минутах езды на юг от города Южно-Сахалинск, рядом с
+							с.Мицулевка. Удаленность от трассы Южно-Сахалинск – Корсаков позволит Вам и Вашей семье в полной мере
+							насладиться чистым воздухом, тишиной и пением птиц.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="s-about__grid">
+						<img src="img/photo.jpg" class="a" alt="">
+						<img src="img/photo1.jpg" class="b" alt="">
+						<img src="img/photo2.jpg" class="c" alt="">
+						<img src="img/photo3.jpg" class="d" alt="">
+						<img src="img/photo4.jpg" class="e" alt="">
+						<img src="img/photo5.jpg" class="f" alt="">
+						<img src="img/photo6.jpg" class="g" alt="">
+						<img src="img/photo7.jpg" class="h" alt="">
+						<img src="img/photo8.jpg" class="i" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="s s-plan">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="h2 s-plan__h2">
+						Планировки и цены
+					</h2>
+
+					<p class="s-plan__text">
+						Вы можете выбрать одну из 5 возможных планировок дома. Стоимость участка включена в стоимость дома. На все
+						объекты распространяются льготные программы "Дальневосточная ипотека", "Сельская ипотека" и "Семейная
+						ипотека". Забронировать или приобрести дом Вы можете у застройщика по телефону +7 (924) 8888-602 или у наших
+						партнеров-компании "ЭТАЖИ", обратившись по телефону +7 (4242) 30-10-49 или по адресу: г. Южно-Сахалинск, ул.
+						Курильская, 38, этаж 2, офис 11.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="s-plan__plan-item">
+						<div class="row">
+							<div class="col-sm-6">
+								<img src="img/plan/plan1.jpg" alt="">
+
+								<div class="s-plan__info">
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/area.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Площадь</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">87,0 м²</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/bed.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Спальня</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">3</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/wc.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Санузел</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<img src="img/plan/home1.jpg" alt="" class="s-plan__photo">
+
+								<div class="s-plan__price">
+									<p class="s-plan__sebtitle">
+										Стоимость:
+									</p>
+
+									<p class="s-plan__price-text">
+										от 8 598 000 ₽
+									</p>
+
+									<p class="s-plan__old-price-text">
+										от 8 938 000 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s s-genplan">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="h2 s-genplan__h2">
+						Генплан
+					</h2>
+				</div>
+
+				<div class="plan-map s-genplan__plan-map">
+					<div class="plan-map__wrapper" style="background-image: url(img/plan.jpg);">
+						<div class="plan-map__list">
+						</div>
+
+						<div class="plan-map__card hidden">
+						</div>
+					</div>
+				</div>
+
+				<p class="s-genplan__text">Нажмите на дом, чтобы посмотреть</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="s s-faq">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="h2 s-faq__h2">
+						Часто задаваемые вопросы
+					</h2>
+
+					<ul class="s-faq__list">
+						<li class="s-faq__item">
+							<div class="s-faq__header">
+								<div class="s-faq__title">
+									КАК ЗАБРОНИРОВАТЬ ДОМ?
+								</div>
+							</div>
+
+							<div class="s-faq__footer">
+								<p class="s-faq__text">
+									Да, Вы можете отказаться от бронирования выбранного объекта и вернуть стоимость бронирования.
+								</p>
+							</div>
+						</li>
+						<li class="s-faq__item">
+							<div class="s-faq__header">
+								<div class="s-faq__title">
+									СКОЛЬКО СТОИТ БРОНИРОВАНИЕ?
+								</div>
+							</div>
+
+							<div class="s-faq__footer">
+								<p class="s-faq__text">
+									Да, Вы можете отказаться от бронирования выбранного объекта и вернуть стоимость бронирования.
+								</p>
+							</div>
+						</li>
+						<li class="s-faq__item">
+							<div class="s-faq__header">
+								<div class="s-faq__title">
+									ЧТО ОЗНАЧАЕТ БРОНИРОВАНИЕ УЧАСТКА С ДОМОМ?
+								</div>
+							</div>
+
+							<div class="s-faq__footer">
+								<p class="s-faq__text">
+									Да, Вы можете отказаться от бронирования выбранного объекта и вернуть стоимость бронирования.
+								</p>
+							</div>
+						</li>
+						<li class="s-faq__item">
+							<div class="s-faq__header">
+								<div class="s-faq__title">
+									ЧТО ДЕЛАТЬ ПОСЛЕ БРОНИРОВАНИЯ?
+								</div>
+							</div>
+
+							<div class="s-faq__footer">
+								<p class="s-faq__text">
+									Да, Вы можете отказаться от бронирования выбранного объекта и вернуть стоимость бронирования.
+								</p>
+							</div>
+						</li>
+						<li class="s-faq__item">
+							<div class="s-faq__header">
+								<div class="s-faq__title">
+									МОГУ ЛИ Я ОТКАЗАТЬСЯ ОТ БРОНИРОВАНИЯ?
+								</div>
+							</div>
+
+							<div class="s-faq__footer">
+								<p class="s-faq__text">
+									Да, Вы можете отказаться от бронирования выбранного объекта и вернуть стоимость бронирования.
+								</p>
+							</div>
+						</li>
+						<li class="s-faq__item">
+							<div class="s-faq__header">
+								<div class="s-faq__title">
+									ПРИ ОТМЕНЕ БРОНИРОВАНИЯ Я ПОЛУЧУ ВСЮ СУММУ?
+								</div>
+							</div>
+
+							<div class="s-faq__footer">
+								<p class="s-faq__text">
+									Да, Вы можете отказаться от бронирования выбранного объекта и вернуть стоимость бронирования.
+								</p>
+							</div>
+						</li>
+						<li class="s-faq__item">
+							<div class="s-faq__header">
+								<div class="s-faq__title">
+									Я ПРИОБРЕТАЮ ДОМ, ЧТО С МОИМ БРОНИРОВАНИЕМ?
+								</div>
+							</div>
+
+							<div class="s-faq__footer">
+								<p class="s-faq__text">
+									Да, Вы можете отказаться от бронирования выбранного объекта и вернуть стоимость бронирования.
+								</p>
+							</div>
+						</li>
+						<li class="s-faq__item">
+							<div class="s-faq__header">
+								<div class="s-faq__title">
+									ПОДОРОЖАЮТ ЛИ ДОМА В ПОСЕЛКЕ?
+								</div>
+							</div>
+
+							<div class="s-faq__footer">
+								<p class="s-faq__text">
+									Да, Вы можете отказаться от бронирования выбранного объекта и вернуть стоимость бронирования.
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s s-map">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="h2 s-map__h2">
+						Местоположение
+					</h2>
+					<div class="s-map__map">
+						<iframe
+							src="https://yandex.ru/map-widget/v1/?um=constructor%3Af14b6ce292800b1936fdf2404b6ae8b158fd2ed506ad7e89734209e854278c29&amp;source=constructor"
+							frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s s-find">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 class="h2 s-find__h2">
+						Как нас найти?
+					</h2>
+				</div>
+			</div>
+
+			<div class="row justify-content-md-between">
+				<div class="col-xl-auto col-sm-6">
+					<div class="s-find__col">
+						<h3 class="s-find__h3">
+							Контакты
+						</h3>
+
+						<p class="s-find__subtitle">
+							Для консультаций обращайтесь по телефону
+							или пишите на почту:
+						</p>
+
+						<a href="+79248888602" class="s-find__contact">
+							<img src="img/solar_phone-bold.svg" alt="">
+							+7 (924) 8888 - 602
+						</a>
+
+						<a href="mailto:info@ecopark65.com" class="s-find__contact">
+							<img src="img/tabler_mail-filled.svg" alt="">
+							info@ecopark65.com
+						</a>
+
+						<h3 class="s-find__h3">
+							О застройщике
+						</h3>
+
+						<p class="s-find__text">
+							ООО “ГрандАрхитек”<br>
+							ОГРН 1226500004191<br>
+							ИНН 6500005470<br>
+							КПП 650001001
+						</p>
+
+						<h3 class="s-find__h3">
+							Юр. адрес:
+						</h3>
+
+						<p class="s-find__text">
+							Сахалинская область, г. Южно-Сахалинск, тер. Тор Южная
+						</p>
+
+						<h3 class="s-find__h3">
+							Почтовый адрес:
+						</h3>
+
+						<p class="s-find__text">
+							Сахалинская область, г. Южно-Сахалинск, ул. Комсомольская, 192б
+						</p>
+					</div>
+				</div>
+
+				<div class="col-xl-auto col-sm-6">
+					<div class="s-find__col">
+						<h3 class="s-find__h3">
+							Напишите нам
+						</h3>
+
+						<p class="s-modal__subtitle">
+							Вы можете задать вопрос или запросить обратный звонок через данную форму.
+						</p>
+
+						<form action="" class="s-modal__form" method="POST">
+							<input class="s-modal__input" type="text" name="name" placeholder="Введите имя">
+							<input class="s-modal__input" type="tel" name="tel" placeholder="Телефон">
+							<input class="s-modal__input" type="email" name="email" placeholder="E-mail">
+
+							<textarea name="message" class="s-modal__textarea s-find__textarea" placeholder="Ваше сообщение"></textarea>
+
+							<button type="submit" title="" class="btn s-modal__btn">Отправить сообщение</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-sm-between align-items-center flex-sm-nowrap">
+				<div class="col-sm-auto">
+					<a href="#" class="footer__logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+				</div>
+
+				<div class="col-sm-auto">
+					<p class="footer__text">
+						Общество с Ограниченной Ответственностью “ГрандАрхитек” © 2023
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<section class="s s-modal">
+		<div class="s-modal__flex">
+			<div class="s-modal__wrapper">
+				<p class="s-modal__title">
+					Напишите нам
+				</p>
+
+				<form action="" class="s-modal__form" method="POST">
+					<input class="s-modal__input" type="text" name="name" placeholder="Введите имя">
+					<input class="s-modal__input" type="tel" name="tel" placeholder="Телефон">
+					<input class="s-modal__input" type="email" name="email" placeholder="E-mail">
+
+					<textarea name="message" class="s-modal__textarea" placeholder="Ваше сообщение"></textarea>
+
+					<button type="submit" title="" class="btn s-modal__btn">Отправить сообщение</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
