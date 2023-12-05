@@ -1,4 +1,36 @@
 $(function () {
+	if ($(window).outerWidth() < 576) {
+		AOS.init({
+			disable: true
+		});
+	} else {
+		AOS.init({
+			once: true,
+			offset: 60
+		});
+	}
+
+	lightbox.option({
+		'albumLabel': "Изображение %1 из %2",
+		'disableScrolling': true
+	})
+
+	$('.s-plan__slider').slick({
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					prevArrow: '<button class="s-plan__slider-arrow s-plan__slider-arrow--left"></button>',
+					nextArrow: '<button class="s-plan__slider-arrow s-plan__slider-arrow--right"></button>',
+				}
+			},
+		]
+	});
+
 	const planData = [
 		{
 			id: 0,
@@ -600,7 +632,6 @@ $(function () {
 		},
 	]
 
-	planHidden = true
 	const card = $('.plan-map__card')
 
 	for (i = 0; i < planData.length; i++) {
@@ -648,21 +679,40 @@ $(function () {
 			`
 		card.append(statusWrapper);
 
-		if (planHidden) {
-			card.fadeIn(300)
-			planHidden = false
+		function cardPosition() {
+			if (planData[index].x < 30) {
+				return '--left'
+			} else if (planData[index].x > 70) {
+				return '--right'
+			}
 		}
+
+		card.removeClass('--left --right')
+
+		card.addClass(cardPosition)
+
+		card.css('bottom', `${100 - planData[index].y}%`).css('left', `${planData[index].x}%`)
+
+		card.fadeIn(300)
 	})
 
 	$(document).click(function (event) {
 		const target = event.target
 
-		if (!(($(target).closest('.plan-map__card').length > 0) || ($(target).closest('.plan-map__point').length > 0) || ($(target).closest('.s-modal__wrapper').length > 0) || ($(target).closest('.btn--callback').length > 0))) {
-			planHidden = true
+		if (!(($(target).closest('.plan-map__card').length > 0) || ($(target).closest('.plan-map__point').length > 0))) {
 			card.fadeOut(300)
 		}
+
+
 	})
 
+	$('.s-modal').click(function (event) {
+		const target = event.target
+
+		if (!(($(target).closest('.s-modal__wrapper').length > 0) || ($(target).closest('.btn--callback').length > 0))) {
+			$('.s-modal').fadeOut(300)
+		}
+	})
 
 	//SVG Fallback
 	if (!Modernizr.svg) {
@@ -701,24 +751,19 @@ $(function () {
 
 	$("img, a").on("dragstart", function (event) { event.preventDefault(); });
 
-
-	$('.scroll-down').click(function () {
-		alert('scroll!')
-	})
-
 	$('#header__hamburger').click(function () {
 		$(this).find('#hamburger').toggleClass('is-active')
 		$('.header__menu').toggleClass('active')
 	})
 
-	$('.s-faq__header').click(function() {
-		$(this).siblings('.s-faq__footer').slideToggle(300)
-		$(this).parent('.s-faq__item').toggleClass('active')
+	$('.s-faq__item').click(function () {
+		$(this).find('.s-faq__footer').slideToggle(300)
+		$(this).toggleClass('active')
 	})
 
-	$('input[type="tel"]').inputmask({"mask": "+7 (999) 999-9999"});
+	$('input[type="tel"]').inputmask({ "mask": "+7 (999) 999-9999" });
 
-	$('.btn--callback').click(function() {
+	$('.btn--callback').click(function () {
 		$('.s-modal').fadeIn(300)
 	})
 });

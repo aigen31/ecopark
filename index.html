@@ -24,7 +24,9 @@
 	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="libs/css-hamburgers/dist/hamburgers.min.css">
 	<link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
-	<!-- <link rel="stylesheet" href="libs/animate/animate.css"> -->
+	<link rel="stylesheet" href="libs/slick-1.8.1/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/lightbox2/dist/css/lightbox.min.css">
+	<link rel="stylesheet" href="libs/aos/dist/aos.css">
 
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -34,24 +36,18 @@
 
 	<script src="libs/slick-1.8.1/slick/slick.min.js" defer></script>
 
+	<script src="libs/lightbox2/dist/js/lightbox.min.js" defer></script>
+
 	<script src="libs/inputmask/dist/jquery.inputmask.min.js" defer></script>
+
+	<script src="libs/aos/dist/aos.js" defer></script>
 
 	<script src="libs/modernizr/modernizr.js" defer></script>
 
 	<script src="js/common.js" defer></script>
-
 </head>
 
 <body>
-
-	<!-- Здесь пишем код -->
-
-	<!-- <div class="hidden"></div>
-
-	<div class="loader">
-		<div class="loader_inner"></div>
-	</div> -->
-
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -72,22 +68,22 @@
 							<div class="header__menu">
 								<ul class="header__menu-list">
 									<li class="header__menu-item">
-										<a href="#">Концепция</a>
+										<a href="#s-concept">Концепция</a>
 									</li>
 									<li class="header__menu-item">
-										<a href="#">Планировки и цены</a>
+										<a href="#s-plan">Планировки и цены</a>
 									</li>
 									<li class="header__menu-item">
-										<a href="#">Местоположение</a>
+										<a href="#s-map">Местоположение</a>
 									</li>
 									<li class="header__menu-item">
-										<a href="#">Фотогалерея</a>
+										<a href="#s-photo">Фотогалерея</a>
 									</li>
 									<li class="header__menu-item">
-										<a href="#">FAQ</a>
+										<a href="#s-faq">FAQ</a>
 									</li>
 									<li class="header__menu-item">
-										<a href="#">Контакты</a>
+										<a href="#s-contacts">Контакты</a>
 									</li>
 								</ul>
 							</div>
@@ -112,7 +108,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h1 class="h1 s-main__h1">
+					<h1 class="h1 s-main__h1" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">
 						Коттеджный<br>
 						поселок<br>
 						<span>Экопарк</span>
@@ -120,17 +116,19 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row" data-aos="fade-up" data-aos-delay="100"
+			data-aos-duration="600">
 				<div class="col-sm-12 col-6 offset-sm-0 offset-6">
 					<div class="buttons s-main__buttons">
-						<a href="#" class="btn s-main__btn btn--callback">Связаться</a>
-						<a href="#" class="btn s-main__btn btn--inline">планировки</a>
+						<button class="btn s-main__btn btn--callback">Связаться</button>
+						<a href="#s-plan" class="btn s-main__btn btn--inline">планировки</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="s-main__vector --absolute-right --absolute-sm-left">
+		<div class="s-main__vector --absolute-right --absolute-sm-left" data-aos="fade-up" data-aos-delay="200"
+			data-aos-duration="600">
 			<p class="s-main__vector-text">
 				Cчастье<br>
 				живет<br>
@@ -138,21 +136,21 @@
 			</p>
 		</div>
 
-		<button type="button" title="Scroll Down" class="scroll-down">
+		<a href="#s-concept" title="Scroll Down" class="scroll-down">
 			<img src="img/arrow-down.svg" alt="">
-		</button>
+		</a>
 	</section>
 
 
-	<section class="s s-concept">
+	<section class="s s-concept" id="s-concept">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="h2 s-concept__h2">
+					<h2 class="h2 s-concept__h2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">
 						Концепция
 					</h2>
 
-					<div class="s-concept__border-radius">
+					<div class="s-concept__border-radius" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
 						<div class="s-concept__message">
 							<p>
 								Закрытый коттеджный поселок ЭкоПарк в селе Мицулевка. Здесь все сделано для безопасного и комфортного
@@ -176,7 +174,8 @@
 			</div>
 		</div>
 
-		<img src="img/ellipse.png" alt="" class="s-concept__composition --absolute-left">
+		<img src="img/ellipse.png" alt="" class="s-concept__composition --absolute-left" data-aos="fade-up"
+			data-aos-delay="150" data-aos-duration="600">
 	</section>
 
 
@@ -184,14 +183,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="h2 s-about__h2">
+					<h2 class="h2 s-about__h2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">
 						Наш поселок это
 					</h2>
 				</div>
 			</div>
 
 			<div class="row justify-content-xl-between">
-				<div class="col-xl-auto">
+				<div class="col-xl-auto" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
 					<div class="s-about__card">
 						<div class="s-about__card-image">
 							<div class="s-about__card-circle">
@@ -215,7 +214,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-xl-auto">
+				<div class="col-xl-auto" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
 					<div class="s-about__card">
 						<div class="s-about__card-image">
 							<div class="s-about__card-circle">
@@ -238,7 +237,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-xl-auto">
+				<div class="col-xl-auto" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
 					<div class="s-about__card">
 						<div class="s-about__card-image">
 							<div class="s-about__card-circle">
@@ -265,16 +264,25 @@
 
 			<div class="row">
 				<div class="col">
-					<div class="s-about__grid">
-						<img src="img/photo.jpg" class="a" alt="">
-						<img src="img/photo1.jpg" class="b" alt="">
-						<img src="img/photo2.jpg" class="c" alt="">
-						<img src="img/photo3.jpg" class="d" alt="">
-						<img src="img/photo4.jpg" class="e" alt="">
-						<img src="img/photo5.jpg" class="f" alt="">
-						<img src="img/photo6.jpg" class="g" alt="">
-						<img src="img/photo7.jpg" class="h" alt="">
-						<img src="img/photo8.jpg" class="i" alt="">
+					<div class="s-about__grid" id="s-photo">
+						<a href="img/photo.jpg" class="a" data-lightbox="s-photo-1"><img src="img/photo.jpg" alt=""
+								data-aos="fade-right" data-aos-duration="600"></a>
+						<a href="img/photo1.jpg" class="b" data-lightbox="s-photo-1"><img src="img/photo1.jpg" alt=""
+								data-aos="fade-left" data-aos-duration="600"></a>
+						<a href="img/photo2.jpg" class="c" data-lightbox="s-photo-1"><img src="img/photo2.jpg" alt=""
+								data-aos="fade-left" data-aos-duration="600"></a>
+						<a href="img/photo3.jpg" class="d" data-lightbox="s-photo-1"><img src="img/photo3.jpg" alt=""
+								data-aos="fade-right" data-aos-duration="600"></a>
+						<a href="img/photo4.jpg" class="e" data-lightbox="s-photo-1"><img src="img/photo4.jpg" alt=""
+								data-aos="fade-right" data-aos-duration="600"></a>
+						<a href="img/photo5.jpg" class="f" data-lightbox="s-photo-1"><img src="img/photo5.jpg" alt=""
+								data-aos="fade-left" data-aos-duration="600"></a>
+						<a href="img/photo6.jpg" class="g" data-lightbox="s-photo-1"><img src="img/photo6.jpg" alt=""
+								data-aos="fade-right" data-aos-duration="600"></a>
+						<a href="img/photo7.jpg" class="h" data-lightbox="s-photo-1"><img src="img/photo7.jpg" alt=""
+								data-aos="fade-right" data-aos-duration="600"></a>
+						<a href="img/photo8.jpg" class="i" data-lightbox="s-photo-1"><img src="img/photo8.jpg" alt=""
+								data-aos="fade-left" data-aos-duration="600"></a>
 					</div>
 				</div>
 			</div>
@@ -282,15 +290,15 @@
 	</section>
 
 
-	<section class="s s-plan">
+	<section class="s s-plan" id="s-plan">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="h2 s-plan__h2">
+					<h2 class="h2 s-plan__h2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">
 						Планировки и цены
 					</h2>
 
-					<p class="s-plan__text">
+					<p class="s-plan__text" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
 						Вы можете выбрать одну из 5 возможных планировок дома. Стоимость участка включена в стоимость дома. На все
 						объекты распространяются льготные программы "Дальневосточная ипотека", "Сельская ипотека" и "Семейная
 						ипотека". Забронировать или приобрести дом Вы можете у застройщика по телефону +7 (924) 8888-602 или у наших
@@ -302,11 +310,19 @@
 
 			<div class="row">
 				<div class="col">
-					<div class="s-plan__plan-item">
+					<div class="s-plan__plan-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
+						<div class="s-plan__slider">
+							<div class="s-plan__slide">
+								<a href="img/plan/plan5.jpg" data-lightbox="plan-1"><img src="img/plan/plan5.jpg" alt="" class="s-plan__slide-border"></a>
+							</div>
+							<div class="s-plan__slide">
+								<a href="img/plan/home1.jpg" data-lightbox="plan-1"><img src="img/plan/home1.jpg" alt=""
+										class="s-plan__photo"></a>
+							</div>
+						</div>
+
 						<div class="row">
 							<div class="col-sm-6">
-								<img src="img/plan/plan1.jpg" alt="">
-
 								<div class="s-plan__info">
 									<div class="s-plan__info-row">
 										<div class="s-plan__info-col">
@@ -347,8 +363,6 @@
 								</div>
 							</div>
 							<div class="col-sm-6">
-								<img src="img/plan/home1.jpg" alt="" class="s-plan__photo">
-
 								<div class="s-plan__price">
 									<p class="s-plan__sebtitle">
 										Стоимость:
@@ -374,35 +388,36 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="h2 s-genplan__h2">
+					<h2 class="h2 s-genplan__h2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">
 						Генплан
 					</h2>
 				</div>
 
-				<div class="plan-map s-genplan__plan-map">
+				<div class="plan-map s-genplan__plan-map" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
 					<div class="plan-map__wrapper" style="background-image: url(img/plan.jpg);">
 						<div class="plan-map__list">
 						</div>
 
-						<div class="plan-map__card hidden">
+						<div class="plan-map__card">
 						</div>
 					</div>
 				</div>
 
-				<p class="s-genplan__text">Нажмите на дом, чтобы посмотреть</p>
+				<p class="s-genplan__text" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">Нажмите на дом, чтобы
+					посмотреть</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="s s-faq">
+	<section class="s s-faq" id="s-faq">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="h2 s-faq__h2">
+					<h2 class="h2 s-faq__h2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">
 						Часто задаваемые вопросы
 					</h2>
 
-					<ul class="s-faq__list">
+					<ul class="s-faq__list" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
 						<li class="s-faq__item">
 							<div class="s-faq__header">
 								<div class="s-faq__title">
@@ -513,14 +528,14 @@
 		</div>
 	</section>
 
-	<section class="s s-map">
+	<section class="s s-map" id="s-map">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="h2 s-map__h2">
+					<h2 class="h2 s-map__h2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">
 						Местоположение
 					</h2>
-					<div class="s-map__map">
+					<div class="s-map__map" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
 						<iframe
 							src="https://yandex.ru/map-widget/v1/?um=constructor%3Af14b6ce292800b1936fdf2404b6ae8b158fd2ed506ad7e89734209e854278c29&amp;source=constructor"
 							frameborder="0"></iframe>
@@ -530,18 +545,18 @@
 		</div>
 	</section>
 
-	<section class="s s-find">
+	<section class="s s-find" id="s-contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="h2 s-find__h2">
+					<h2 class="h2 s-find__h2" data-aos="fade-up" data-aos-delay="50" data-aos-duration="600">
 						Как нас найти?
 					</h2>
 				</div>
 			</div>
 
 			<div class="row justify-content-md-between">
-				<div class="col-xl-auto col-sm-6">
+				<div class="col-xl-auto col-sm-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
 					<div class="s-find__col">
 						<h3 class="s-find__h3">
 							Контакты
@@ -552,10 +567,16 @@
 							или пишите на почту:
 						</p>
 
-						<a href="+79248888602" class="s-find__contact">
-							<img src="img/solar_phone-bold.svg" alt="">
-							+7 (924) 8888 - 602
-						</a>
+						<div class="s-find__tel">
+							<a href="+79248888602" class="s-find__contact">
+								<img src="img/solar_phone-bold.svg" alt="">
+								+7 (924) 8888 - 602
+							</a>
+
+							<a href="https://wa.me/79248888602" target="_blank" rel="noopener" class="s-find__whatsapp">
+								<img src="img/whatsapp.svg" alt="">
+							</a>
+						</div>
 
 						<a href="mailto:info@ecopark65.com" class="s-find__contact">
 							<img src="img/tabler_mail-filled.svg" alt="">
@@ -591,7 +612,7 @@
 					</div>
 				</div>
 
-				<div class="col-xl-auto col-sm-6">
+				<div class="col-xl-auto col-sm-6" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
 					<div class="s-find__col">
 						<h3 class="s-find__h3">
 							Напишите нам
@@ -606,7 +627,8 @@
 							<input class="s-modal__input" type="tel" name="tel" placeholder="Телефон">
 							<input class="s-modal__input" type="email" name="email" placeholder="E-mail">
 
-							<textarea name="message" class="s-modal__textarea s-find__textarea" placeholder="Ваше сообщение"></textarea>
+							<textarea name="message" class="s-modal__textarea s-find__textarea"
+								placeholder="Ваше сообщение"></textarea>
 
 							<button type="submit" title="" class="btn s-modal__btn">Отправить сообщение</button>
 						</form>
@@ -618,14 +640,14 @@
 
 	<footer class="footer">
 		<div class="container">
-			<div class="row justify-content-sm-between align-items-center flex-sm-nowrap">
+			<div class="row justify-content-md-between">
 				<div class="col-sm-auto">
 					<a href="#" class="footer__logo">
 						<img src="img/logo.svg" alt="">
 					</a>
 				</div>
 
-				<div class="col-sm-auto">
+				<div class="col-lg-9 col-sm-8">
 					<p class="footer__text">
 						Общество с Ограниченной Ответственностью “ГрандАрхитек” © 2023
 					</p>
