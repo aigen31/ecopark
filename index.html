@@ -71,16 +71,22 @@
 										<a href="#s-concept">Концепция</a>
 									</li>
 									<li class="header__menu-item">
-										<a href="#s-plan">Планировки и цены</a>
-									</li>
-									<li class="header__menu-item">
-										<a href="#s-map">Местоположение</a>
+										<a href="#s-about">Наш просёлок</a>
 									</li>
 									<li class="header__menu-item">
 										<a href="#s-photo">Фотогалерея</a>
 									</li>
 									<li class="header__menu-item">
+										<a href="#s-plan">Планировки и цены</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#s-genplan">Генплан</a>
+									</li>
+									<li class="header__menu-item">
 										<a href="#s-faq">FAQ</a>
+									</li>
+									<li class="header__menu-item">
+										<a href="#s-map">Местоположение</a>
 									</li>
 									<li class="header__menu-item">
 										<a href="#s-contacts">Контакты</a>
@@ -177,7 +183,7 @@
 			data-aos-delay="150" data-aos-duration="600">
 	</section>
 
-	<section class="s s-about">
+	<section class="s s-about" id="s-about">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -282,6 +288,13 @@
 						<a href="img/photo-8-original.jpg" class="i" data-lightbox="s-photo-1"><img src="img/photo8.jpg" alt=""
 								data-aos="fade-left" data-aos-duration="600"></a>
 					</div>
+
+					<!-- Изображения галереи, не показаные на сетке -->
+					<div class="hidden">
+						<a href="img/photo-6-original.jpg" data-lightbox="s-photo-1"></a>
+						<a href="img/photo-7-original.jpg" data-lightbox="s-photo-1"></a>
+						<a href="img/photo-8-original.jpg" data-lightbox="s-photo-1"></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -307,10 +320,10 @@
 
 			<div class="row">
 				<div class="col">
-					<div class="s-plan__plan-item" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
+					<div class="s-plan__plan-item">
 						<div class="s-plan__slider">
 							<div class="s-plan__slide">
-								<a href="img/plan/plan5.jpg" data-lightbox="plan-1"><img src="img/plan/plan5.jpg" alt="" class="s-plan__slide-border"></a>
+								<a href="img/plan/plan1.jpg" data-lightbox="plan-1"><img src="img/plan/plan1.jpg" alt="" class="s-plan__slide-border"></a>
 							</div>
 							<div class="s-plan__slide">
 								<a href="img/plan/home1.jpg" data-lightbox="plan-1"><img src="img/plan/home1.jpg" alt=""
@@ -376,12 +389,292 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="s-plan__plan-item">
+						<div class="s-plan__slider">
+							<div class="s-plan__slide">
+								<a href="img/plan/plan2.jpg" data-lightbox="plan-2"><img src="img/plan/plan2.jpg" alt="" class="s-plan__slide-border"></a>
+							</div>
+							<div class="s-plan__slide">
+								<a href="img/plan/home1.jpg" data-lightbox="plan-2"><img src="img/plan/home1.jpg" alt=""
+										class="s-plan__photo"></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="s-plan__info">
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/area.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Площадь</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">92,8 м²</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/bed.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Спальня</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">3</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/wc.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Санузел</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="s-plan__price">
+									<p class="s-plan__sebtitle">
+										Стоимость:
+									</p>
+
+									<p class="s-plan__price-text">
+										от 9 033 000 ₽
+									</p>
+
+									<p class="s-plan__old-price-text">
+										9 483 200 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="s-plan__plan-item">
+						<div class="s-plan__slider">
+							<div class="s-plan__slide">
+								<a href="img/plan/plan3.jpg" data-lightbox="plan-2"><img src="img/plan/plan3.jpg" alt="" class="s-plan__slide-border"></a>
+							</div>
+							<div class="s-plan__slide">
+								<a href="img/plan/home1.jpg" data-lightbox="plan-2"><img src="img/plan/home1.jpg" alt=""
+										class="s-plan__photo"></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="s-plan__info">
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/area.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Площадь</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">97,8 м²</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/bed.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Спальня</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">3</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/wc.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Санузел</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="s-plan__price">
+									<p class="s-plan__sebtitle">
+										Стоимость:
+									</p>
+
+									<p class="s-plan__price-text">
+										от 9 503 200 ₽
+									</p>
+
+									<p class="s-plan__old-price-text">
+										9 953 200 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="s-plan__plan-item">
+						<div class="s-plan__slider">
+							<div class="s-plan__slide">
+								<a href="img/plan/plan4.jpg" data-lightbox="plan-4"><img src="img/plan/plan4.jpg" alt="" class="s-plan__slide-border"></a>
+							</div>
+							<div class="s-plan__slide">
+								<a href="img/plan/home1.jpg" data-lightbox="plan-4"><img src="img/plan/home1.jpg" alt=""
+										class="s-plan__photo"></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="s-plan__info">
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/area.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Площадь</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">102,8 м²</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/bed.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Спальня</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">3</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/wc.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Санузел</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">1</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="s-plan__price">
+									<p class="s-plan__sebtitle">
+										Стоимость:
+									</p>
+
+									<p class="s-plan__price-text">
+										от 9 973 200 ₽
+									</p>
+
+									<p class="s-plan__old-price-text">
+										10 423 200 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="s-plan__plan-item">
+						<div class="s-plan__slider">
+							<div class="s-plan__slide">
+								<a href="img/plan/plan5.jpg" data-lightbox="plan-5"><img src="img/plan/plan5.jpg" alt="" class="s-plan__slide-border"></a>
+							</div>
+							<div class="s-plan__slide">
+								<a href="img/plan/home1.jpg" data-lightbox="plan-5"><img src="img/plan/home1.jpg" alt=""
+										class="s-plan__photo"></a>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="s-plan__info">
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/area.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Площадь</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">110,4 м²</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/bed.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Спальня</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">4</p>
+										</div>
+									</div>
+									<div class="s-plan__info-row">
+										<div class="s-plan__info-col">
+											<div class="s-plan__info-icon">
+												<img src="img/wc.svg" alt="">
+											</div>
+											<p class="s-plan__info-title">Санузел</p>
+										</div>
+
+										<div class="s-plan__info-col">
+											<p class="s-plan__info-value">2</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="s-plan__price">
+									<p class="s-plan__sebtitle">
+										Стоимость:
+									</p>
+
+									<p class="s-plan__price-text">
+										от 10 667 600 ₽
+									</p>
+
+									<p class="s-plan__old-price-text">
+										11 137 600 ₽
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="s s-genplan">
+	<section class="s s-genplan" id="s-genplan">
 		<div class="container">
 			<div class="row">
 				<div class="col">

@@ -1,15 +1,4 @@
 $(function () {
-	if ($(window).outerWidth() < 576) {
-		AOS.init({
-			disable: true
-		});
-	} else {
-		AOS.init({
-			once: true,
-			offset: 60
-		});
-	}
-
 	lightbox.option({
 		'albumLabel': "Изображение %1 из %2",
 		'disableScrolling': true
@@ -792,11 +781,17 @@ $(function () {
 	$('.btn--callback').click(function () {
 		$('.s-modal').fadeIn(300)
 	})
+
+	setTimeout(function() {
+		if ($(window).outerWidth() < 576) {
+			AOS.init({
+				disable: true
+			});
+		} else {
+			AOS.init({
+				once: true,
+				offset: 60
+			});
+		}
+	}, 0)
 });
-
-// $(window).load(function() {
-
-// 	$(".loader_inner").fadeOut();
-// 	$(".loader").delay(400).fadeOut("slow");
-
-// });
